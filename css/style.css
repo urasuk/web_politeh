@@ -580,7 +580,7 @@ h1, h2, h3, h4, h5, h6 {
 .testimonial__text {
   line-height: 24px;
   font-size: 14px;
-  color: #606e7e;
+  color: white;
   letter-spacing: 1.4px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
