@@ -1,0 +1,228 @@
+@import "nullstyle.scss";
+@import "header_and_footer.scss";
+@import "product__column.scss";
+@import "color.scss";
+@import "templates.scss";
+@import "mixines.scss";
+
+
+// ---------------------------- intro --------------------------
+
+.general_header{
+    background: radial-gradient($blue_easy,$purple);
+}
+
+
+
+.main_header{
+    padding: 0 8%;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
+
+    &__row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+    
+    }
+    &__text{
+        line-height: 50px;
+        font-size: 30px;
+     
+        & h1{
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 60px;
+            margin-bottom: 25px ;
+        }
+    
+        flex-basis: 40%;
+        min-width: 300px;
+    
+    
+    
+        @media (max-width:930px) {
+            flex-basis: 100%;
+        }
+    
+    
+        & .btn{
+            @extend %btn;
+            @include btn($blue, $blue_grey, $grey,16px);      
+        }
+
+    }
+    &__image{
+       & img{
+           max-width: 100%;
+           padding: 50px 0;
+        }
+       flex-basis: 60%;
+       min-width: 340px;      
+    
+       @media (max-width:930px) {
+        flex-basis: 80%;
+    }
+    }
+}
+
+// put away from html redundant
+// .featured_products{
+
+// }
+// .recent_products{
+
+// }
+
+.products__title{
+
+    @extend %products__title;
+
+    // &-featured{
+    //     padding: 0 20px;   
+    //     margin-bottom: 30px;
+    // }
+    // &-recent{
+    //     padding: 0 20px;
+    //     margin-bottom: 30px;   
+    // }
+    padding: 0 20px;
+    margin-bottom: 30px;  
+}
+
+.featured_products__row, .recent_products__row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+}
+
+// ------------------- review ---------------------
+
+.testimonial{
+    margin: 50px 0;
+    padding: 0 30px;
+}
+
+.testimonial__body{
+    margin: 0 auto;
+    max-width: 990px;
+
+}
+
+.testimonial__row{
+    display: flex;      // це відповідає за то щоб кологки були в ряд
+    justify-content: space-between;
+    margin: 0 -22.5px;
+
+    @media (max-width:768px) {
+        flex-wrap: wrap;
+    }
+
+}
+.testimonial__col{
+
+    display: flex; // А ЦЕ !!! відповідає за то шоб колонки розтягувалися (то шо орієнтація row, то елементи в колонці не вистра
+    // юються в рядок, бо ми робимо для testimonial__col, і тут лише одна дівка testimonial__item). якшо внести в кол 2 айтема
+    // то встане в ряд
+    align-items: stretch;
+    // flex-wrap: wrap;
+
+    flex-basis: 33.3%;
+
+    @media (max-width:768px) {
+        flex-basis: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 5;
+
+    }
+
+    padding: 0 22.5px;
+    margin: 25px 0;
+
+
+}
+
+.testimonial__item{
+    border: 3px solid $black;
+    background-color: $dark_gray;
+    color: $white;
+    border-radius: 5px;
+
+    padding:20px 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width:768px) {
+        border-radius: 10px;
+    }
+
+}
+
+@media (max-width:768px) {
+    #testimonial__1{
+        background-color: $dark_gray;
+    }
+    #testimonial__2{
+        background-color: $white_gray;
+    }
+    #testimonial__3{
+        background-color: $dark_gray;
+    }
+}
+
+.testimonial__quote_img{
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+   
+}
+.testimonial__text{
+
+    line-height: 24px;
+    font-size: 14px;
+    color: $white_gray;
+    letter-spacing: 1.4px;
+    flex: 1 1 auto; // прижимаємо
+
+    @media (max-width:768px) {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+.rate{
+    display: inline-block;
+    margin: 15px auto;
+
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+.testimonial__user_img{
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    border: 3px solid $white;
+    border-radius: 50%;
+
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    img{
+        max-width: 100%;
+    }
+}
+.testimonial__caption{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/product-details.css">
+    <title>Product details</title>
+</head>
+<body>
+    <div class="wrapper">
+<!-- -----------header------------ -->
+        <header class="header">
+            <div class="container">       
+                    <nav class="menu__row">
+                        <a class="menu__logo" href="index.html"></a>
+                        <div class="menu__options">
+                            <a class="option" href="index.html"> Home </a>
+                            <a class="option" href="products.html"> Products </a>
+                            <a class="option" href="login.html"> Log in </a>
+                            <a class="option" href="signup.html"> Sign up </a>
+                            <a class="option" href="account.html"> Account </a> 
+                            <a class="menu__cart" href="shopping_cart.html"></a>       
+                        </div>   
+                        <img src="img/menu.png" class="menu__icon" alt="">
+                    </nav>
+            </div>
+        </header>
+        <main class="content">
+            <div class="container">
+<!------------- single product details --------------->
+                <div class="single-product">
+                    <div class="single-product__row">
+                        <div class="single-product__col1">
+                            <div class="single-product__image">
+                                <img src="img/pharmacy/img_0.webp"  alt="">
+                            </div>
+                        </div>
+                        <div class="single-product__col2">
+                            <div class="single-product__body">
+                                <div class="single-product__header">
+                                    <h2 class="single-product__subtitle">Вітаміни/Комплексні</h2>
+                                    <form action="#" class="single-product__form1" method="get">
+                                        <label for="for-checkbox" class="input_label">Is on demand ?</label> 
+                                        <div id="hidden">
+                                            <input type="checkbox" name="is-on-demand" id="for-checkbox" value="1">
+                                            <button type="submit" id="btn0"> Submit </button>
+                                        </div>            
+                                    </form>
+                                </div>
+                                <h1 class="single-product__title">Solgar<br>вітаміни для щкіри</h1>
+                                <div class="single-product__price">1018 грн</div>
+                                <form action="#" method="get" class="single-product__form2">
+                                    <label for="for-number" class="input_label" id="input_label__modificator">Enter number of items: </label>
+                                    <input type="number" id="for-number" name="product-quantity"  min="1" value="1">
+                                    <button type="submit" class="btn"> Add to cart</button>
+                                </form>
+
+                                <div class="single-product__details">Product Details</div>
+                                <p class="single-product__details_text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi consequuntur odit numquam aspernatur eligendi quae quibusdam voluptatem earum atque, neque dicta ducimus. Suscipit, rerum culpa nulla impedit sint ea laborum?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all_products">   
+                    <h1 id="all_products__item_title" class="item_title">Related products</h1>              
+                    <div class="all_products__row">                            
+                        <a class="product__col" href="#">
+                            <div class="product__image">
+                                <img src="img/pharmacy/img_0.webp" alt="">
+                            </div>                            
+                            <h4 class="product-name">Solgar Таблетки для шкіри</h4>
+                            <p class="product-price">1018 грн</p>
+                        </a>
+                        <a class="product__col" href="#">
+                            <div class="product__image">
+                                <img src="img/pharmacy/img_0 (2).webp" alt="">
+                            </div>                            
+                            <h4 class="product-name" >Пластир медичний перцевий </h4>
+                            <p class="product-price">17 грн</p>
+                        </a>
+                        <a class="product__col" href="#">
+                            <div class="product__image">
+                                <img src="img/pharmacy/img_0 (3).webp" alt="">
+                            </div>                            
+                            <h4 class="product-name">Боро Плюс крем</h4>
+                            <p class="product-price">66 грн</p>
+                        </a>
+                        <a class="product__col" href="#">
+                            <div class="product__image">
+                                <img src="img/pharmacy/img_0 (4).webp" alt="">
+                            </div>                            
+                            <h4 class="product-name">Бодяга гель</h4>
+                            <p class="product-price">22 грн</p>
+                        </a>
+                    </div>
+                </div>         
+            </div>              
+        </main>
+<!-- -----------footer------------ -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__col">                    
+                        <div class="footer__item">
+                            <div class="footer__title">
+                                Download Our App
+                            </div>
+                            <div class="footer__subtitle">
+                                Download app for android and ios smartphones
+                            </div>
+                        </div>                  
+                    </div>
+                    <div class="footer__col">                       
+                        <div class="footer__item">
+                            <div class="footer__img">
+                                
+                            </div>
+                            <div class="footer__subtitle">
+                                Our purpose is to sustaninably make the pleasure and benefits of sports accessible to the many
+                            </div>
+                        </div>                   
+                    </div>
+                    <div class="footer__col">                     
+                        <div class="footer__item">
+                            <div class="footer__title">
+                                Useful links 
+                            </div>
+                            <div class="footer__subtitle">
+                                Coupons <br> Blog Post <br> Return Policy <br> Api
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="footer__col">                        
+                        <div class="footer__item">
+                            <div class="footer__title">
+                                Follow us
+                            </div>
+                            <div class="footer__subtitle">
+                                Facebook <br>  Twitter <br> Instagram <br> Youtube
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>  
+</body>
+</html>

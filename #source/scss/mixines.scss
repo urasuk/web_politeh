@@ -1,0 +1,13 @@
+@mixin btn($btn_col, $btn__hover_col, $btn__active_col,$btn_font_size){
+    
+    background-color: $btn_col;
+    font-size: $btn_font_size;
+
+    &:hover{
+        background-color: $btn__hover_col; 
+    }
+
+    &:active{
+        background-color: $btn__active_col;          
+    }
+}

@@ -1,0 +1,413 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding: 20px;
+}
+
+.menu__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__logo {
+  display: inline-block;
+  width: 125px;
+  height: 50px;
+  min-width: 140px;
+  background: url("../img/pharmacy/kisspng-mortar-and-pestle-logo-design-pharmacy-herbal-medicine-clinic-health-food-and-more-5d39a7e823cde7.1143271015640596241467.png") center/contain no-repeat;
+  margin-right: 5%;
+}
+
+.menu__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu__options .option {
+  margin: 0 10px;
+  line-height: 40px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  color: #464646;
+}
+
+.menu__options .option:hover {
+  color: #000;
+  text-shadow: 1px 2px 2px #606e7e;
+}
+
+.menu__options .option:active {
+  color: white;
+  text-shadow: 2px 2px 8px #000;
+}
+
+@media (max-width: 768px) {
+  .menu__options {
+    display: none;
+  }
+}
+
+.menu__cart {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: url("../img/cart.png") center/30px 30px no-repeat;
+  margin-left: 15px;
+}
+
+.menu__cart:hover {
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+  background-color: #8aedff;
+  outline: 1px solid #000;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 3px 3px #000;
+          box-shadow: 0px 3px 3px #000;
+}
+
+.menu__cart:active {
+  position: relative;
+  top: 3px;
+  background-color: #01c0ff;
+  -webkit-box-shadow: 0px 2px 1px #000;
+          box-shadow: 0px 2px 1px #000;
+}
+
+.menu__icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu__icon {
+    display: block;
+    width: 28px;
+    margin-left: 20px;
+  }
+}
+
+.footer {
+  margin-top: auto;
+  padding: 20px 10px;
+  background-color: #000;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -10px;
+}
+
+@media (max-width: 480px) {
+  .footer__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer__col {
+  padding: 0 10px;
+}
+
+.footer__col:first-child, .footer__col:nth-child(2) {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.footer__col:nth-child(3), .footer__col:last-child {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+@media (max-width: 480px) {
+  .footer__col {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+.footer__title {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .footer__title {
+    font-size: 12px;
+  }
+}
+
+.footer__subtitle {
+  text-align: center;
+  line-height: 20px;
+  color: #606e7e;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer__subtitle {
+    display: none;
+  }
+}
+
+.footer__img {
+  margin: 0  auto 15px auto;
+  width: 125px;
+  height: 50px;
+  background: url("../img/pharmacy/kisspng-mortar-and-pestle-logo-design-pharmacy-herbal-medicine-clinic-health-food-and-more-5d39a7e823cde7.1143271015640596241467.png") center/contain no-repeat;
+}
+
+@media (max-width: 768px) {
+  .footer__img {
+    max-width: 40%;
+  }
+}
+
+.product__col {
+  display: block;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  padding: 13px;
+  margin-bottom: 30px;
+  position: relative;
+  top: 0;
+  -webkit-transition: top ease 0.5s;
+  transition: top ease 0.5s;
+}
+
+.product__col:hover {
+  top: -10px;
+  bottom: 15px;
+  -webkit-box-shadow: 1px 2px 15px #464646;
+          box-shadow: 1px 2px 15px #464646;
+  border-radius: 15px;
+}
+
+.product__col:hover .product-name, .product__col:hover .product-price {
+  font-weight: 800;
+}
+
+.product__col:active {
+  -webkit-box-shadow: 1px 2px 15px #29e0d1;
+          box-shadow: 1px 2px 15px #29e0d1;
+}
+
+@media (max-width: 768px) {
+  .product__col {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+.product__col .product__image {
+  padding: 0 0 100% 0;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.product__col .product__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 17px;
+}
+
+.product__col .product-name {
+  color: #464646;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.product__col .product-price {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #fe702e;
+  letter-spacing: 0.4px;
+}
+
+.cart-page {
+  margin-bottom: 80px auto;
+}
+
+.cart-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main_table__col_name {
+  text-align: left;
+  padding: 5px;
+  color: white;
+  background-color: #b094f1;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main_table__data {
+  padding: 10px 5px;
+}
+
+.main_table__data input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+.main_table__data a {
+  color: #f80000;
+  font-size: 12px;
+}
+
+.main_table__data img {
+  width: 50px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.total-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.total-price table {
+  border-top: 3px solid #b094f1;
+  width: 100%;
+  max-width: 33%;
+}
+
+.main_table__data:last-child, th:last-child {
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .cart-info small {
+    display: none;
+  }
+}

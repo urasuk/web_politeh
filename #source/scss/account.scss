@@ -1,0 +1,362 @@
+@font-face {
+    font-family: 'bahij';
+    src: url('../fonts/bahij-sultannahia.ttf');
+}
+
+@font-face {
+    font-family: 'chronica';
+    src: url('../fonts/ChronicaPro-Regular.ttf');
+}
+
+@import "nullstyle.scss";
+@import "color.scss";
+@import "header_and_footer.scss";
+@import "templates.scss";
+@import "mixines.scss";
+
+// .body{
+//     height: 100vh;
+// }
+
+
+.content{
+    background: linear-gradient(0deg, $purple 0%, $blue_easy 100%);
+}
+
+.header{
+    background: $blue_easy;
+}
+
+.menu2{
+
+    height: 44px;
+   
+    &__row{
+        
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto; 
+    }
+
+
+    &__link{
+        display: inline-block;
+        // white-space: nowrap;
+        // overflow: hidden;
+        text-align: center;
+        font-family: 'chronica';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+        color: $black;
+        text-shadow: 0px 4px 4px $dark_gray;
+
+        padding: 0 20px;
+        margin: 0 10px;
+
+        @media(max-width:768px){
+            width: 50%;
+            font-size: 15px;
+            line-height: 20px;
+            color: $black;
+            text-shadow: 0px 4px 4px $dark_gray;
+            padding: 0 10px;
+            margin: 0 5px;
+    
+        }
+
+        border: 1px solid $black;
+        border-radius: 23px;
+        background-color: $white;      
+    }
+
+    &__delete_account_link{
+        
+        &:hover{
+            color:$white;
+            box-shadow: 1px 2px 5px $black;
+            background-color: $semi-red;
+        }
+
+        &:active{
+            color:$white;
+            position:relative;
+            top:2px;
+            box-shadow: none;
+            background-color: $red;
+        }
+    }
+
+    &__edit_account_link{
+        
+        &:hover{
+            color:$white;
+            box-shadow: 1px 2px 5px $black;
+            background-color: $purple;
+        }
+
+        &:active{
+            color:$white;
+            position:relative;
+            top:2px;
+            box-shadow: none;
+            background-color: $dark-purple;
+        }
+    }
+
+    &__logout_link{        
+        &:hover{
+            color:$white;
+            box-shadow: 1px 2px 5px $black;
+            background-color: $cian;
+        }
+    
+
+        &:active{
+            color:$white;
+            position:relative;
+            top:2px;
+            box-shadow: none;
+            background-color: $green;
+        }
+
+        @media(max-width:768px){
+            line-height: 40px;  
+        }
+    
+    }
+
+    
+}
+
+.main{
+
+    background: $dark_gray;
+    border-radius: 30px;
+
+    &__row{
+        display: flex;
+        @media(max-width:555px){
+            line-height: 40px;  
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    padding:20px;
+    min-width: 320px;
+}
+
+.content{
+    padding-bottom: 20px;
+}
+
+.main__side_bar{
+
+    margin-top:126px;   // 216-20-20-50 
+
+    margin-bottom: 5%;
+
+    width: 105px;
+
+
+    height: (420/(301+420+179))*100%;
+
+    background: $white;
+    border-radius: 30px;
+
+
+
+    @media(max-width:555px){
+        flex-basis: 100%;
+        width: 100%;
+        margin-top:10px;
+
+        display: flex;
+        align-items: center;
+    }
+}
+
+.side_bar_link{
+    display: block;
+    width: 67px;
+    height: 62px;
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+}
+
+.main__pc_link{
+    background: url('../img/main/monitor.svg') center/35px 33px no-repeat;
+}
+.main__people_link{
+    background: url('../img/main/users-alt.svg') center/35px 33px no-repeat;
+}
+.main__cloud_link{
+    background: url('../img/main/cloud-share.svg') center/35px 33px no-repeat;
+}
+.main__settings_link{
+    background: url('../img/main/cog.svg') center/35px 33px no-repeat;
+}
+
+.main__body{
+    margin-top: 30px;  
+    margin-left: 37px;
+    @media(max-width:555px){
+        margin-left: 0;
+    }
+    flex-basis: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    align-items: start;
+}
+.main__fullname{
+    width:(592/1440)*100%;
+    width: 40%;
+
+    background: $white;
+    border-radius: 30px;
+    margin-bottom: 34px;
+
+    @media(max-width:768px){
+        width: 100%;
+    }
+}
+
+
+.main_item{
+    padding: 32px 40px;
+}
+
+.main__subtitle{
+    font-family: 'bahij', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 33px;
+    color: $white_gray;
+}
+
+
+.main__title{
+    font-family: 'bahij', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.main__username{
+    width: (583/1190)*100%;
+    width: 58%;
+
+
+    background: $white;
+    border-radius: 30px;
+
+    margin-bottom: 34px;
+    @media(max-width:768px){
+        width: 100%;
+    }
+}
+
+.phone_and_email{
+    @media(max-width:768px){
+        width: 100%;
+    }
+    width: (732/1440)*100%;
+
+}
+
+.main__phone{
+
+
+    background: $white;
+    border-radius: 30px;
+
+    margin-bottom: 34px;
+
+}
+
+.main__password{
+    width: (547/1190)*100%;
+    @media(max-width:768px){
+        width: 100%;
+    }
+    border-radius: 30px;
+
+
+    background: url("../img/main/data.jpg") center/50% no-repeat,$white;;
+    
+    align-self: stretch;
+
+    margin-bottom: 34px;
+
+    #password__hidden{
+        opacity: 0;
+        transition-duration: 1s;
+    }
+
+    position: relative;
+    #btn_emulator{
+        
+        display:block;
+        padding: 0 20px;
+        line-height: 24px;
+        border: 1px solid $black;
+        border-radius: 20px;
+        background-color: $green;
+        position: absolute;
+        bottom: 35px;
+        right:20px;
+        
+        &:hover{
+            #password__hidden{
+                opacity: 1;
+            }
+        }
+
+        @media(max-width:768px){
+            margin-left: 10px;
+        }
+    }
+
+}
+
+#email__body{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+}
+
+.main__email{
+
+    border-radius: 30px;
+
+    background-color: $white;
+
+    .email__content{
+        margin-right: 10px;
+    }
+
+
+    .email__img{
+
+        width: 20%;
+        img{
+            width: 100%;
+        }
+    }
+    padding: 18px 0 18px 18px;
+
+    margin-bottom: 34px;
+
+}
+
+
+

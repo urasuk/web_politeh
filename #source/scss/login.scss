@@ -1,0 +1,84 @@
+@import "nullstyle.scss";
+@import "color.scss";
+@import "header_and_footer.scss";
+@import "templates.scss";
+@import "mixines.scss";
+
+.general_header{
+   flex: 1 1 auto;
+     
+}
+
+.content{
+    background: linear-gradient(0deg, $purple 0%, $blue_easy 100%);
+}
+
+.header{
+    background: $blue_easy;
+}
+
+.main__row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+
+
+}
+.main__form{
+    flex-basis: 40%;
+    min-width: 300px;
+
+    line-height: 50px;
+    font-size: 30px;
+ 
+    & h1{
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 25px ;
+    }
+
+    
+
+
+    @media (max-width:930px) {
+        flex-basis: 100%;
+    }
+
+
+    & .btn{
+        @extend %btn;
+        @include btn($blue, $blue_grey, $grey,16px); 
+    }
+
+    .btn__modifier{
+
+        margin: 0 0 20px 40%;
+    }
+
+
+    input{   
+        display: block;
+        min-width: 250px;
+        max-width: 500px;
+        padding: 10px;
+        margin: 10px auto;
+        border: 2px solid $black;
+        border-radius: 7px;
+    }
+
+}
+.main__image{
+   & img{
+       max-width: 100%;
+       padding: 50px 0;
+    }
+   flex-basis: 60%;
+   min-width: 340px;                // !!!!!!!!!!!!!!!!!
+
+   @media (max-width:930px) {
+    flex-basis: 80%;
+}
+}
