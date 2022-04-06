@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Sign up page</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="general_header">
+            <div class="header">
+                <div class="container">       
+                        <nav class="menu__row">
+                            <a class="menu__logo" href="index.html"></a>
+                            <div class="menu__options">
+                                <a class="option" href="index.html"> Home </a>
+                                <a class="option" href="products.html"> Products </a>
+                                <a class="option" href="login.html"> Log in </a>
+                                <a class="option" href="signup.html"> Sign up </a> 
+                                <a class="option" href="account.html"> Account </a> 
+                                <a class="menu__cart" href="shopping_cart.html"></a>       
+                            </div>   
+                            <img src="img/menu.png" class="menu__icon" alt="">
+                        </nav>
+                </div>
+            </div>
+        </header>
+        <main class="content">          
+            <div class="container">
+                <div class="main__row">
+                    <div class="main__image">
+                        <img src="img/pharmacy/pharmacy-main.png" alt="">
+                    </div>
+                    <div class="main__form">
+                        <h1>Sign up</h1>
+                        <form action="#" method="get">
+                            <input type="text" name="username" placeholder="username" minlength="5" maxlength="10" required>
+                            <input type="text" name="firstname"  placeholder="enter firstname" required>
+                            <input type="text" name="lastname"  placeholder="enter lastname" required>
+                            <input type="phone" name="phone" 
+                              pattern="\d{3}[\-\s]?\d{3}[\-\s]?\d{2}[\-\s]?\d{2}" placeholder="068 230 89 28" 
+                              minlength="10" maxlength="13" required>
+                            <input type="email" name="email"  placeholder="user@gmail.com" required>
+                            <input type="password" name="password" placeholder="password" required>                            
+                            <button  type="submit" class="btn btn__modifier"><span>Sign up</span></button>
+                        </form>
+                       
+                    </div>
+                </div>
+            </div>         
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__col">                    
+                        <div class="footer__item">
+                            <div class="footer__title">
+                                Download Our App
+                            </div>
+                            <div class="footer__subtitle">
+                                Download app for android and ios smartphones
+                            </div>
+                        </div>                  
+                    </div>
+                    <div class="footer__col">                       
+                        <div class="footer__item">
+                            <div class="footer__img">
+                               
+                            </div>
+                            <div class="footer__subtitle">
+                                Our purpose is to sustaninably make the pleasure and benefits of sports accessible to the many
+                            </div>
+                        </div>                   
+                    </div>
+                    <div class="footer__col">                     
+                        <div class="footer__item">
+                            <div class="footer__title">
+                                Useful links 
+                            </div>
+                            <div class="footer__subtitle">
+                                Coupons <br> Blog Post <br> Return Policy <br> Api
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="footer__col">                        
+                        <div class="footer__item">
+                            <div class="footer__title">
+                                Follow us
+                            </div>
+                            <div class="footer__subtitle">
+                                Facebook <br>  Twitter <br> Instagram <br> Youtube
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>   
+</body>
+</html>

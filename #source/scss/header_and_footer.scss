@@ -1,0 +1,181 @@
+@import "color.scss";
+
+.wrapper{
+
+    min-height: 100%;   // без цього футер не прижме, бо довжина всього нашого wrapper дорівнюватиме контенту
+
+    display: flex;
+    flex-direction: column;
+}
+
+// min-height: 100%; OR this:
+// .body{
+//     height: 100vh;
+// }
+
+
+.content{
+    flex: 1 1 auto;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header{
+    padding: 20px;
+}
+.menu{
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    &__logo{
+        display: inline-block;
+        width: 125px;
+        height: 50px;
+        min-width: 140px;
+
+        background: url('../img/pharmacy/kisspng-mortar-and-pestle-logo-design-pharmacy-herbal-medicine-clinic-health-food-and-more-5d39a7e823cde7.1143271015640596241467.png') center/contain no-repeat ;
+        margin-right: 5%;
+
+    }
+
+    &__options{
+        
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       
+        .option{
+            margin: 0 10px ;
+            line-height: 40px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            color: $dark_gray;
+            
+            &:hover{
+                color: $black;
+                text-shadow: 1px 2px 2px  $white_gray;
+            } 
+            &:active{
+                color: $white;
+                text-shadow: 2px 2px 8px $black;
+            }
+
+        }
+
+        @media (max-width:768px){
+            display: none;
+        }
+      
+    }
+
+
+    &__cart{
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        //  padding-top: 30px; не паше???
+        background: url('../img/cart.png') center/30px 30px no-repeat ;
+        margin-left: 15px;
+
+        &:hover{
+            transition: background 0.5s;
+            background-color: $blue_easy;
+            outline: 1px solid $black;
+            border-radius: 7px;
+            box-shadow: 0px 3px 3px $black;
+        } 
+
+        &:active{
+            position: relative;
+            top: 3px;
+            background-color: $blue;
+            box-shadow: 0px 2px 1px $black;
+                
+        }
+
+    }
+
+    &__icon{
+            display: none;
+            @media (max-width:768px) {
+                display: block;
+                width: 28px;
+                margin-left: 20px; 
+            }  
+    }
+
+}
+
+.footer{
+
+    margin-top: auto; // to place footer below !!!!
+
+    padding: 20px 10px;
+    background-color: $black;
+
+    &__row{
+        display: flex;
+        margin: 0 -10px;
+
+        @media(max-width:480px){
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+    }
+    &__col{
+        // flex-basis: 25%;
+        padding: 0 10px;
+
+        &:first-child, &:nth-child(2){
+            flex-basis: 30%;
+        }
+        &:nth-child(3), &:last-child{
+            flex-basis: 20%;
+        }
+        @media(max-width:480px){
+            flex-basis: 100%;
+        }
+    }
+    // &__item{
+    //     // padding: 15px;
+    // }
+    &__title{
+        text-align: center;
+        color: $white;
+        font-size: 18px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        @media(max-width:768px){
+            font-size: 12px;
+        }
+        
+    }
+    &__subtitle{
+        text-align: center;
+        line-height: 20px;
+        color: $white_gray;
+        font-size: 14px;
+        @media(max-width:768px){
+            display: none;
+        }
+    }
+    &__img{
+        margin: 0  auto 15px auto;
+        width: 125px;
+        height: 50px;
+        background: url('../img/pharmacy/kisspng-mortar-and-pestle-logo-design-pharmacy-herbal-medicine-clinic-health-food-and-more-5d39a7e823cde7.1143271015640596241467.png') center/contain no-repeat ;
+        @media(max-width:768px){
+            max-width: 40%;
+        }
+    }
+
+
+}

@@ -1,0 +1,69 @@
+.product__col {
+  display: block;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  padding: 13px;
+  margin-bottom: 30px;
+  position: relative;
+  top: 0;
+  -webkit-transition: top ease 0.5s;
+  transition: top ease 0.5s;
+}
+
+.product__col:hover {
+  top: -10px;
+  bottom: 15px;
+  -webkit-box-shadow: 1px 2px 15px #464646;
+          box-shadow: 1px 2px 15px #464646;
+  border-radius: 15px;
+}
+
+.product__col:hover .product-name, .product__col:hover .product-price {
+  font-weight: 800;
+}
+
+.product__col:active {
+  -webkit-box-shadow: 1px 2px 15px #29e0d1;
+          box-shadow: 1px 2px 15px #29e0d1;
+}
+
+@media (max-width: 768px) {
+  .product__col {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+.product__col .product__image {
+  padding: 0 0 100% 0;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.product__col .product__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 17px;
+}
+
+.product__col .product-name {
+  color: #464646;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.product__col .product-price {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #fe702e;
+  letter-spacing: 0.4px;
+}
