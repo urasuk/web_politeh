@@ -246,7 +246,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer__subtitle {
   text-align: center;
   line-height: 20px;
-  color: #cdcdcd;
+  color: #606e7e;
   font-size: 14px;
 }
 
@@ -324,7 +324,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product__col .product-name {
-  color: #3b3b3b;
+  color: #464646;
   margin-bottom: 10px;
   font-size: 18px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -335,7 +335,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 700;
-  color: #da6200;
+  color: #fe702e;
   letter-spacing: 0.4px;
 }
 
