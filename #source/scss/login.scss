@@ -82,3 +82,52 @@
     flex-basis: 80%;
 }
 }
+
+.main__notification{
+
+    display: none;
+
+    //position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 150px;
+}
+
+.notification__body{
+
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.734);
+   
+}
+
+.notification__message{
+    margin: 25px 0 0 0;
+    text-align: center;
+    color: rgb(4, 182, 72);
+    font-weight: 700;
+    padding: 0 0 30px 0;
+
+}
+
+.btn__login_ok{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+    border: 1px solid rgb(29, 58, 36);
+    border-radius: 10px;
+    background-color: rgba(6, 239, 80, 0.595);
+    font-size: 18px;
+    margin-bottom: 30px;
+    &:hover{
+        background-color: rgba(0, 215, 50, 0.844);
+    }
+    &:active{
+        box-shadow: 0px 3px 6px #000;
+    }
+    
+}
