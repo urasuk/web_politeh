@@ -630,3 +630,12 @@ h1, h2, h3, h4, h5, h6 {
 .main__email .email__img img {
   width: 100%;
 }
+
+input{
+  /*display: block;*/
+  width: 98%;
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  padding-left: 15px;
+
+}
