@@ -45,58 +45,57 @@
                                 
                             </a>   
                         </sidebar>
-                        <div class="main__body">
-                            <div class="main__fullname main_item">   
+                        <form class="main__body">
+                            <div class="main__fullname main_item">
                                 <div class="main__subtitle">fullname</div>
-                                <div class="main__title"></div>
+                                <input type="text" class="main__title" placeholder="Enter fullname" readonly>
                             </div>
-                            <div class="main__username main_item">    
+                            <div class="main__username main_item">
                                 <div class="main__subtitle">username [status]</div>
-                                <div class="main__title"></div>
+                                <input type="text" class="main__title" placeholder="Enter username" readonly>
                             </div>
                             <div class="phone_and_email">
-                                <div class="main__phone main_item">                                   
-                                    <div class="main__title"></div>
-                                    <div class="main__subtitle">phone number</div>                                       
+                                <div class="main__phone main_item">
+<!--                                    <div class="main__title"></div>-->
+                                    <input type="text" class="main__title" placeholder="Enter phone number" readonly>
+                                    <div class="main__subtitle">phone number</div>
                                 </div>
-                                <div class="main__email main_item">   
-                                    <div id="email__body">                        
+                                <div class="main__email main_item">
+                                    <div id="email__body">
                                         <div class="email__img">
-                                            <img src="img/main/team.jpg" alt="">  
-                                        </div>                   
+                                            <img src="img/main/team.jpg" alt="">
+                                        </div>
                                         <div class="email__content">
-                                            <div class="main__title"></div>
+                                            <input type="text" class="main__title" placeholder="Enter email" readonly>
+<!--                                            <div class="main__title"></div>-->
                                             <div class="main__subtitle">
                                                 email
                                             </div>
-                                        </div>          
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="main__password main_item">
                                 <!-- <div class="password_body"> -->
-                                    <!-- <img src="img/main/data.jpg" alt=""> -->   
+                                    <!-- <img src="img/main/data.jpg" alt=""> -->
                                     <div class="main__subtitle">password</div>
                                     <div id="btn_emulator">
                                         reveal
                                         <span class="main__title" id="password__hidden">hidden</span>
                                     </div>
-                                <!-- </div>     -->
+<!--                                <input type="text" class="main__title" placeholder="Enter password" readonly>-->
                             </div>
+
                             <div class="menu2">
                                 <div class="container">
                                     <div class="menu2__row">
-                                        <a href="#" class="menu2__link menu2__logout_link">Log out</a>
+<!--                                         <a href="#" class="menu2__link menu2__logout_link">Log out</a>-->
                                         <a href="#" class="menu2__delete_account_link menu2__link">Delete Account</a>
-                                        <a href="#" class="menu2__edit_account_link menu2__link">Edit Account</a>
-                                        <!-- <a href="#" class="btn"><span>Edit account</span></a>
-                                        <a href="#" class="btn"><span>Delete account</span></a>
-                                        <a href="#" class="btn"><span>Log out</span></a> -->
-
+                                        <button type="submit" href="#" class="menu2__edit_account_link menu2__link">Edit Account</button>
                                     </div> 
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

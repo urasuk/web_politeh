@@ -13,15 +13,15 @@ const phoneElement = document.querySelector('[name="phone"]');
 const passwordElement = document.querySelector('[name="password"]');
 const userStatusElement = document.querySelector('[name="userStatus"]');
 
+const allInput = document.querySelectorAll(".input_data");
 
-console.log(firstnameElement.value)
+// console.log(firstnameElement.value)
 
 
 function signup() {
     return new Promise((resolve, reject) => {
         const url = URL_CREATE_USER;
         const xhr = new XMLHttpRequest();
-        console.log(firstnameElement.value)
 
 
         xhr.open(POST, url, true);
@@ -52,18 +52,28 @@ function signup() {
             username: usernameElement.value,
             userstatus:userStatusElement.value
         });
-
-        console.log('going to send', sendObject);
-
         xhr.send(sendObject);
     })
 
 }
 
-const button = document.querySelector('.btn');
+const submitButton = document.querySelector('.btn');
+const form = document.querySelector('.form');
 
-button.addEventListener('click', (event) => {
+
+
+// with type 'submit' validation works [BUT request doesn't send ...]
+// with type 'click' NO !!!!
+// ... the reason is that you have to create event listener NOT ON SUBMIT BUTTON
+// BUT ON FORM!!!! CUZ Forms are submitted, not buttons
+//
+// The submit event is fired when a form is submitted.
+// Note that submit is fired only on the form element, not the button or submit input.
+// https://stackoverflow.com/questions/32637920/addeventlistener-using-submit-is-not-working
+form.addEventListener('submit', (event) => {
     event.preventDefault();
+
+    console.log("input_item.getAttribute('required')")
     signup().then((response) => {
         console.log("then ->" + response['token']);
         setTimeout(() => {
